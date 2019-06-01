@@ -1,0 +1,22 @@
+/* demo.wxss */
+scroll-view {
+  /* 设置不换行 */
+  white-space: nowrap;
+  /* 设置滚动区域高度 */
+  height: 200px;
+}
+.scroll-view-item {
+  height: 200px;
+}
+.bc-green {
+  background-color: green;
+}
+.bc-red {
+  background-color: red;
+}
+.bc-blue {
+  background-color: blue;
+}
+.bc-yellow {
+  background-color: yellow;
+}

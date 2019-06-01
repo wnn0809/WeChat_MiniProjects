@@ -1,0 +1,21 @@
+
+.item {
+  /* 设置高度 */
+  height: 200px;
+  text-align: center;
+  color: #fff;
+  line-height: 100px;
+}
+
+.bc-green {
+  background-color: green;
+}
+.bc-red {
+  background-color: red;
+}
+.bc-blue {
+  background-color: blue;
+}
+.bc-yellow {
+  background-color: skyblue;
+}

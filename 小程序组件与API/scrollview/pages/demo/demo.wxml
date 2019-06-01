@@ -1,0 +1,7 @@
+<!-- demo.wxml -->
+<scroll-view scroll-y="true" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll">
+  <view id="green" class='scroll-view-item bc-green'></view>
+  <view id="red" class='scroll-view-item bc-red'></view>
+  <view id="blue" class='scroll-view-item bc-blue'></view>
+  <view id="yellow" class='scroll-view-item bc-yellow'></view>
+</scroll-view>
