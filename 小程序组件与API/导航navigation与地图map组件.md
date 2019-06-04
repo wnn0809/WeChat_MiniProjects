@@ -1,6 +1,5 @@
 更多内容[点这里](https://blog.csdn.net/w1418899532/article/details/90809438)
 
-
 <font color="red">**导航与地图组件的应用场景：**
 
 在小程序需要由当前页面跳转到指定的页面时，就可以使用导航navigation组件，只需要设置指定页面的url地址即可。当需要实现定位、查找位置等一些LBS信息时，像滴滴打车这样的应用，就可以用地图map组件。
@@ -8,7 +7,7 @@
 ## <font color="red">1.导航navigation
 navigation：页面的链接。
 
-<font color="blue">它有很多的属性，最最常用的就是url，表示当前小程序内的跳转链接。navigation组件用法也很简单。
+它有很多的属性，最最常用的就是url，表示当前小程序内的跳转链接。navigation组件用法也很简单。
 
 新建的quickstart项目，点击index首页的头像，会跳转到查看日志页面，这是通过给头像图片绑定bindtap事件实现的，把bindtap事件去掉，点击头像就不会跳转的。
 
