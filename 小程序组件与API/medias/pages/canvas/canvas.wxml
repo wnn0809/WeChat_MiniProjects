@@ -1,0 +1,3 @@
+<!-- canvas.wxml -->
+<!-- canvas-id:canvas 组件的唯一标识符，若指定了 type 则无需再指定该属性 -->
+<canvas style="width: 100%; height: 350px;background:blue;" canvas-id="firstCanvas"></canvas>

@@ -1,0 +1,13 @@
+<!-- media.wxml -->
+<!-- poster:默认控件上的音频封面的图片资源地址，如果 controls 属性值为 false 则设置 poster 无效 -->
+<!-- name:默认控件上的音频名字 -->
+<!-- author：默认控件上的作者名字 -->
+<!-- src：要播放音频的资源地址 -->
+<!--controls：是否显示默认控件，默认值false  -->
+<!--loop：是否循环播放,默认值false  -->
+<!-- id：audio 组件的唯一标识符 -->
+<audio poster="{{poster}}" name="{{name}}" author="{{author}}" src="{{src}}" id="myAudio" controls="{{true}}" loop="{{true}}"></audio>
+
+<button type="primary" bindtap="audioPlay">播放</button>
+<button type="primary" bindtap="audioPause">暂停</button>
+<button type="primary" bindtap="audio14">设置当前播放时间为14秒</button>

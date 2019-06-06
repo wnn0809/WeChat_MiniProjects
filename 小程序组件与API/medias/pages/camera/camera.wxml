@@ -1,0 +1,7 @@
+<!-- camera.wxml -->
+<!--device-position:摄像头朝向，默认是back,还有前置front  -->
+<!-- flash：闪光灯，值为auto on off -->
+<!-- binderror:用户不允许使用摄像头时触发 -->
+<camera device-position="back" flash="off" binderror="error" style="width: 100%; height: 300px;"></camera>
+<button type="primary" bindtap="takePhoto">拍照</button>
+<image mode="widthFix" src="{{src}}"></image>
