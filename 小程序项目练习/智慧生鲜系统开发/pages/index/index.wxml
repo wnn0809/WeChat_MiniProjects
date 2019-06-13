@@ -1,0 +1,44 @@
+<!--index.wxml-->
+
+<!-- 轮播图 -->
+<swiper class='slide' autoplay='true' indicator-dots='true' indicator-color='white' circular="true" interval="2000">
+  <swiper-item>
+    <image mode="widthFix" src='http://techan.raoping.com/images/201503/goods_img/17_P_1427246587408.jpg'></image>
+  </swiper-item>
+  <swiper-item>
+    <image mode="widthFix" src='http://img2.99114.com/group3/M00/03/6A/rBADvVoPsYKAaM1aAAU3l8D8MJo820.jpg'></image>
+  </swiper-item>
+  <swiper-item>
+    <image mode="widthFix" src='http://img4.makepolo.net/img4/504/465/100012950465_13856256636068.png'></image>
+  </swiper-item>
+  <swiper-item>
+    <image mode="widthFix"  src='http://img4.imgtn.bdimg.com/it/u=2477990849,3039948656&fm=214&gp=0.jpg'></image>
+  </swiper-item>
+</swiper>
+<van-card
+  num="2"
+  tag="新鲜"
+  price="11.00"
+  desc="多肉多汁，味道甜美"
+  title="无人知是荔枝来"
+  thumb="http://img4.imgtn.bdimg.com/it/u=2477990849,3039948656&fm=214&gp=0.jpg"
+>
+</van-card>
+<van-card
+  num="2"
+  tag="新鲜"
+  price="11.00"
+  desc="多肉多汁，味道甜美"
+  title="无人知是荔枝来"
+  thumb="http://techan.raoping.com/images/201503/goods_img/17_P_1427246587408.jpg"
+>
+</van-card>
+<van-card
+  num="2"
+  tag="新鲜"
+  price="11.00"
+  desc="多肉多汁，味道甜美"
+  title="无人知是荔枝来"
+  thumb="http://img4.makepolo.net/img4/504/465/100012950465_13856256636068.png"
+>
+</van-card>

@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/detail/detail",
+    "pages/monitor/monitor",
+    "pages/my/my"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "智慧生鲜",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar":{
+    "list":[
+      {
+      "pagePath":"pages/index/index",
+      "text":"首页"
+      },
+      {
+        "pagePath": "pages/detail/detail",
+        "text": "分类"
+      },
+      {
+        "pagePath": "pages/monitor/monitor",
+        "text": "购物车"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的"
+      }
+    ]
+  },
+  
+  "usingComponents": {
+    "van-card": "zanui/dist/card/index"
+  }
+}
