@@ -1,44 +1,81 @@
 <!--index.wxml-->
-
+<view class='header'>
+  <!-- 使用vant weapp的search组件 -->
+  <van-search
+  value="{{ value }}"
+  placeholder="新鲜荔枝"
+  use-action-slot="true"
+  bind:search="onSearch"
+  shape="round"
+  background="#eee"
+>
+  <view slot="action" bind:tap="onSearch">搜索</view>
+</van-search>
+</view>
+<view class='slide'>
 <!-- 轮播图 -->
 <swiper class='slide' autoplay='true' indicator-dots='true' indicator-color='white' circular="true" interval="2000">
   <swiper-item>
-    <image mode="widthFix" src='http://techan.raoping.com/images/201503/goods_img/17_P_1427246587408.jpg'></image>
+    <image mode="widthFix"  src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1560506564518&di=4f88677f52e8dc56f52c00975828f32a&imgtype=0&src=http%3A%2F%2Fwww.huishi365.com%2Fupload%2Fimage%2F20150822%2F1440227820646638.png'></image>
   </swiper-item>
   <swiper-item>
-    <image mode="widthFix" src='http://img2.99114.com/group3/M00/03/6A/rBADvVoPsYKAaM1aAAU3l8D8MJo820.jpg'></image>
+    <image mode="widthFix" src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1560506351458&di=4b44e7c2d4fcd430475d09bbe8b7ac93&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F0178b25b3998e8a80121b994c9706b.jpg%402o.jpg'></image>
   </swiper-item>
   <swiper-item>
-    <image mode="widthFix" src='http://img4.makepolo.net/img4/504/465/100012950465_13856256636068.png'></image>
+    <image mode="widthFix" src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1560506485258&di=6901e75e0731b945d859d59b011d640f&imgtype=0&src=http%3A%2F%2Fhbimg.b0.upaiyun.com%2F5f2236c930433d3ff7544343d965c10a41066afb4d914-H2qf5N_fw658'></image>
   </swiper-item>
   <swiper-item>
-    <image mode="widthFix"  src='http://img4.imgtn.bdimg.com/it/u=2477990849,3039948656&fm=214&gp=0.jpg'></image>
+    <image mode="widthFix" src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1560506542145&di=2be76514a338e0fded3762a7b0aa7b02&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F01792a5723055132f875a399c417fb.jpg'></image>
   </swiper-item>
 </swiper>
-<van-card
-  num="2"
-  tag="新鲜"
-  price="11.00"
-  desc="多肉多汁，味道甜美"
-  title="无人知是荔枝来"
-  thumb="http://img4.imgtn.bdimg.com/it/u=2477990849,3039948656&fm=214&gp=0.jpg"
->
-</van-card>
-<van-card
-  num="2"
-  tag="新鲜"
-  price="11.00"
-  desc="多肉多汁，味道甜美"
-  title="无人知是荔枝来"
-  thumb="http://techan.raoping.com/images/201503/goods_img/17_P_1427246587408.jpg"
->
-</van-card>
-<van-card
-  num="2"
-  tag="新鲜"
-  price="11.00"
-  desc="多肉多汁，味道甜美"
-  title="无人知是荔枝来"
-  thumb="http://img4.makepolo.net/img4/504/465/100012950465_13856256636068.png"
->
-</van-card>
+<view class='hr'></view>
+</view>
+<!-- 提示 -->
+<view class='tip'>
+  <!-- 引入vant weapp noticebar通告栏组件 -->
+  <van-notice-bar
+  left-icon="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1560512444917&di=0399762fd04ef6f0ae667325a9c49a90&imgtype=0&src=http%3A%2F%2Fpic.51yuansu.com%2Fpic2%2Fcover%2F00%2F43%2F84%2F58139f3212960_610.jpg"
+  text="通告：生鲜购物节6月10号到6月20号期间所有生鲜商品五折起售，优惠多多，各种新上商品保证新鲜，质量可靠，是您的优选。"
+/>
+</view>
+<view class='hr'></view>
+<view class="vancard">
+  <van-card
+    
+    tag="新鲜"
+    price="11.00"
+    desc="澳洲进口，买的开心，吃的放心"
+    title="染得桃红似肉红"
+    thumb="http://img4.imgtn.bdimg.com/it/u=2477990849,3039948656&fm=214&gp=0.jpg"
+  >
+  </van-card>
+  <view class='hr'></view>
+  <van-card
+    
+    tag="HOT"
+    price="11.00"
+    desc="多肉多汁，味道甜美"
+    title="无人知是荔枝来"
+    thumb="http://techan.raoping.com/images/201503/goods_img/17_P_1427246587408.jpg"
+  >
+  </van-card>
+  <view class='hr'></view>
+  <van-card
+    
+    tag="TOP"
+    price="11.00"
+    desc="多肉多汁，味道甜美"
+    title="无人知是荔枝来"
+    thumb="http://img4.makepolo.net/img4/504/465/100012950465_13856256636068.png"
+  >
+  </van-card>
+</view>
+
+<!-- 页脚 -->
+<view class='foot'>
+  <view>
+    <text>ICP备案333338号</text>
+    <text>tomorrownan</text>
+    <text>杭州市明日有限公司</text>
+  </view>
+</view>

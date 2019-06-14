@@ -1,6 +1,17 @@
 /**index.wxss**/
 
-.slide image{
-  /* width: 750rpx;
-  height: 300rpx; */
+.vancard{
+  margin-top: 5px;
+}
+
+.hr{
+  padding: 5px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.foot text{
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  color: #aaa;
 }

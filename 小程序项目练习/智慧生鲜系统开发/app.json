@@ -7,33 +7,44 @@
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "智慧生鲜",
-    "navigationBarTextStyle": "black"
+    "navigationBarBackgroundColor": "#008842",
+    "navigationBarTitleText": "JJ生鲜",
+    "navigationBarTextStyle": "white"
   },
   "sitemapLocation": "sitemap.json",
   "tabBar":{
     "list":[
       {
       "pagePath":"pages/index/index",
-      "text":"首页"
+      "text":"首页",
+      "iconPath":"pages/img/icon/btn-tabs_01.png",
+      "selectedIconPath":"pages/img/icon/btn-tabs_07.png"
       },
       {
         "pagePath": "pages/detail/detail",
-        "text": "分类"
+        "text": "分类",
+        "iconPath": "pages/img/icon/btn-tabs_02.png",
+        "selectedIconPath": "pages/img/icon/btn-tabs_08.png"
       },
       {
         "pagePath": "pages/monitor/monitor",
-        "text": "购物车"
+        "text": "购物车",
+        "iconPath": "pages/img/icon/btn-tabs_03.png",
+        "selectedIconPath": "pages/img/icon/btn-tabs_09.png"
       },
       {
         "pagePath": "pages/my/my",
-        "text": "我的"
+        "text": "我的",
+        "iconPath": "pages/img/icon/btn-tabs_04.png",
+        "selectedIconPath": "pages/img/icon/btn-tabs_10.png"
       }
     ]
   },
   
   "usingComponents": {
-    "van-card": "zanui/dist/card/index"
+    "van-card": "zanui/dist/card/index",
+    "van-search": "zanui/dist/search/index",
+    "van-notice-bar": "zanui/dist/notice-bar/index",
+    "van-icon": "zanui/dist/icon/index"
   }
 }
