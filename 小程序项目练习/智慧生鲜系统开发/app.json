@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/detail/detail",
     "pages/monitor/monitor",
-    "pages/my/my"
+    "pages/my/my",
+    "pages/order/order"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -45,6 +46,9 @@
     "van-card": "zanui/dist/card/index",
     "van-search": "zanui/dist/search/index",
     "van-notice-bar": "zanui/dist/notice-bar/index",
-    "van-icon": "zanui/dist/icon/index"
+    "van-icon": "zanui/dist/icon/index",
+    "van-panel": "zanui/dist/panel/index",
+    "van-field": "zanui/dist/field/index",
+    "van-area": "zanui/dist/area/index"
   }
 }

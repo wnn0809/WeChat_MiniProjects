@@ -31,13 +31,32 @@
 			"current": -1,
 			"list": []
 		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
 		"game": {
 			"currentL": -1,
 			"list": []
 		},
 		"miniprogram": {
-			"current": -1,
-			"list": []
+			"current": 1,
+			"list": [
+				{
+					"id": -1,
+					"name": "order",
+					"pathName": "pages/order/order",
+					"query": "name=order",
+					"scene": null
+				},
+				{
+					"id": 1,
+					"name": "detail",
+					"pathName": "pages/detail/detail",
+					"query": "id=123&name=detail",
+					"scene": null
+				}
+			]
 		}
 	}
 }

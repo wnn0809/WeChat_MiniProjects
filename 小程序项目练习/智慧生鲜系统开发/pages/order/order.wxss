@@ -1,0 +1,20 @@
+/* 卡片样式重写 */
+.van-card__title {
+margin-top: 12px;
+}
+
+.submitorder{
+  width: 250px;
+  margin-top: 20px;
+}
+
+.price{
+  font-size: 16px;
+}
+
+.totalprice{
+  font-size: 16px;
+  color: red;
+  font-weight: bold;
+  float: right;
+}

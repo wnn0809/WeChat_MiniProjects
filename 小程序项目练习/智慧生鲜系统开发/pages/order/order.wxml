@@ -1,0 +1,79 @@
+
+<view class='order'>
+<!-- 使用vant 卡片组件 -->
+  <van-card
+    num='2'
+    tag="HOT"
+    price="19.00"
+    desc="多肉多汁，味道甜美"
+    title="山前五月杨梅市"
+    thumb="http://techan.raoping.com/images/201503/goods_img/17_P_1427246587408.jpg"
+  >
+  </van-card>
+  <!-- 使用vant 面板组件 -->
+  <van-panel>
+    <view style='padding:15px'>
+      <text class='price'>总价</text>
+      <text class='totalprice'>38元</text>
+    </view>
+  </van-panel>
+  <!-- 定义模板 -->
+  <template name="van-field">
+    <!-- 使用vant feild输入框组件 -->
+    <van-cell-group>
+      <van-field
+        value="{{ receiver }}"
+        required
+        clearable
+        label="收货人"
+        placeholder="请输入收货人姓名"
+        bind:change="onChange"
+      />
+
+      <van-field
+        value="{{ receiverAddress }}"
+        required
+        clearable
+        label="收货人地址"
+        placeholder="请输入收货人地址"
+        bind:change="onChange"
+      />
+      
+      <van-field
+        value="{{ phone }}"
+        required
+        clearable
+        label="手机号"
+        placeholder="请输入收货人手机号"
+        bind:change="onChange"
+      />
+
+      <van-field
+        value="{{ discount }}"
+        required
+        clearable
+        label="优惠券"
+        placeholder="是否使用优惠券"
+        bind:change="onChange"
+      />
+
+
+      <van-field
+        value="{{ other }}"
+        required
+        clearable
+        label="备注"
+        placeholder="快递、发货日期等"
+        bind:change="onChange"
+      />
+  </van-cell-group>
+</template>
+</view>
+
+
+<!-- 提交订单 -->
+<form bindsubmit='fromsubmit'>
+  <!-- 使用模板 -->
+  <template is="van-field" data="{{...value}}"/>
+  <button form-type="submit" type='primary' class="submitorder">提交订单</button>
+</form>
