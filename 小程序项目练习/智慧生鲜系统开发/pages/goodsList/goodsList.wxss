@@ -1,8 +1,12 @@
 /* pages/goodsList/goodsList.wxss */
+page{
+  height: 100%;
+}
 
 .goodslist {
   border-top: 1px solid #cccccc;
   margin-top: 10px;
+  height: 100%;
 }
 .goodcart {
   display: flex;
