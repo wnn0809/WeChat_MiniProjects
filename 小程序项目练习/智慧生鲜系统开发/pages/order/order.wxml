@@ -71,9 +71,11 @@
 </view>
 
 
+
 <!-- 提交订单 -->
 <form bindsubmit='fromsubmit'>
   <!-- 使用模板 -->
   <template is="van-field" data="{{...value}}"/>
-  <button form-type="submit" type='primary' class="submitorder">提交订单</button>
+  <button form-type="submit" type='primary' class="submitorder">提交订单
+  </button>
 </form>

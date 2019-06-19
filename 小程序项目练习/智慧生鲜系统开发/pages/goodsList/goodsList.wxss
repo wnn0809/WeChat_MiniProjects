@@ -1,0 +1,41 @@
+/* pages/goodsList/goodsList.wxss */
+
+.goodslist {
+  border-top: 1px solid #cccccc;
+  margin-top: 10px;
+}
+.goodcart {
+  display: flex;
+  font-size: 14px;
+  border-bottom: 1px solid #aaaaaa;
+  padding: 10px 15px;
+}
+.goodimg image {
+  height: 170rpx;
+  width: 170rpx;
+}
+
+.goodtext {
+  padding-left: 10px;
+}
+.goodname {
+  color:#666666;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.gooddesc {
+  color: #8f7d7d;
+  padding-top: 10px;
+}
+.pricetype {
+  margin-top: 15px;
+}
+.goodprice {
+  color: red;
+  font-weight: bold;
+}
+.goodtype {
+  color: #aaaaaa;
+  padding-left: 100px;
+}

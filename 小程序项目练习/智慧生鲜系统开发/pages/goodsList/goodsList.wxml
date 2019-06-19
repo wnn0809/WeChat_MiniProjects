@@ -1,0 +1,19 @@
+<view class="goodslist">
+<!-- wx:for循环读取数据 -->
+  <view class='goodcart' wx:for="{{goodslist}}" wx:for-item="goodinfo" wx:for-index="index">
+  <!-- 商品图片 -->
+    <view class='goodimg'>
+      <image src='{{goodinfo.pic_url}}'></image>
+    </view>
+    <!-- 商品文字描述 -->
+    <view class='goodtext'>
+      <view class='goodname'>{{goodinfo.name}}</view>
+      <view class='gooddesc'>{{goodinfo.desc}}</view>
+      <view class='pricetype'>
+        <text class='goodprice'>{{goodinfo.price}}</text>
+        <text class='goodtype'>{{goodinfo.type}}</text>
+      </view>
+      
+    </view>
+  </view>
+</view>

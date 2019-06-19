@@ -4,7 +4,8 @@
     "pages/detail/detail",
     "pages/monitor/monitor",
     "pages/my/my",
-    "pages/order/order"
+    "pages/order/order",
+    "pages/goodsList/goodsList"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -48,7 +49,6 @@
     "van-notice-bar": "zanui/dist/notice-bar/index",
     "van-icon": "zanui/dist/icon/index",
     "van-panel": "zanui/dist/panel/index",
-    "van-field": "zanui/dist/field/index",
-    "van-area": "zanui/dist/area/index"
+    "van-field": "zanui/dist/field/index"
   }
 }
