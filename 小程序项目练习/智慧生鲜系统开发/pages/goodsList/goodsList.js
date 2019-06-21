@@ -46,6 +46,38 @@ Page({
         "type": "500g/个",
         "pic_url": "https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3177330934,2805656105&fm=26&gp=0.jpg"
       },
+      {
+        "id": "006",
+        "name": "新疆吐鲁番哈密瓜1个250g起",
+        "desc": "咬一口吐鲁番风情的甜脆",
+        "price": "￥19.8",
+        "type": "250g/个",
+        "pic_url": "https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2556288931,3686867963&fm=26&gp=0.jpg"
+      },
+      {
+        "id": "007",
+        "name": "8424西瓜大个儿，一个5斤起",
+        "desc": "夏季清凉密码=8424",
+        "price": "￥26.9",
+        "type": "500g/个",
+        "pic_url": "https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3177330934,2805656105&fm=26&gp=0.jpg"
+      },
+      {
+        "id": "008",
+        "name": "新疆吐鲁番哈密瓜1个250g起",
+        "desc": "咬一口吐鲁番风情的甜脆",
+        "price": "￥19.8",
+        "type": "250g/个",
+        "pic_url": "https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2556288931,3686867963&fm=26&gp=0.jpg"
+      },
+      {
+        "id": "009",
+        "name": "8424西瓜大个儿，一个5斤起",
+        "desc": "夏季清凉密码=8424",
+        "price": "￥26.9",
+        "type": "500g/个",
+        "pic_url": "https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3177330934,2805656105&fm=26&gp=0.jpg"
+      }
     ]
   },
 

@@ -2,7 +2,7 @@
   "pages": [
     "pages/index/index",
     "pages/detail/detail",
-    "pages/monitor/monitor",
+    "pages/cart/cart",
     "pages/my/my",
     "pages/order/order",
     "pages/goodsList/goodsList"
@@ -29,7 +29,7 @@
         "selectedIconPath": "pages/img/icon/btn-tabs_08.png"
       },
       {
-        "pagePath": "pages/monitor/monitor",
+        "pagePath": "pages/cart/cart",
         "text": "购物车",
         "iconPath": "pages/img/icon/btn-tabs_03.png",
         "selectedIconPath": "pages/img/icon/btn-tabs_09.png"

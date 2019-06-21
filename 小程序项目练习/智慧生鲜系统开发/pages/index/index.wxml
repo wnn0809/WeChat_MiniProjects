@@ -34,7 +34,7 @@
 <view class='tip'>
   <!-- 引入vant weapp noticebar通告栏组件 -->
   <van-notice-bar 
-  left-icon="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1560512444917&di=0399762fd04ef6f0ae667325a9c49a90&imgtype=0&src=http%3A%2F%2Fpic.51yuansu.com%2Fpic2%2Fcover%2F00%2F43%2F84%2F58139f3212960_610.jpg"
+  left-icon="pages/img/icon/icon1.jpg"
   text="通告：生鲜购物节6月10号到6月20号期间所有生鲜商品五折起售，优惠多多，各种新上商品保证新鲜，质量可靠，是您的优选。"
 />
 </view>

@@ -1,0 +1,25 @@
+/* pages/cart/cart.wxss */
+
+Page {
+  height: 100%;
+}
+.cartbox {
+  height: 100%;
+  line-height: 85rpx;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.cartimg image {
+  height: 200rpx;
+  width: 200rpx;
+
+}
+.carttip {
+  color: #FF6EB4;
+}
+
+.cartbtn {
+  width: 300rpx;
+}

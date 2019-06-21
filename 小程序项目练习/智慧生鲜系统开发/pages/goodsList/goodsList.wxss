@@ -64,3 +64,6 @@ page{
   color: #aaaaaa;
   padding-left: 100px;
 }
+.scrollbox {
+  height: 100%;
+}

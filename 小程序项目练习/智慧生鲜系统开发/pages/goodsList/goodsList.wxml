@@ -7,60 +7,66 @@
 </view>
 <swiper class='goodslist' current="{{current}}" bindchange="changeCur">
   <swiper-item>
-    <!-- wx:for循环读取数据 -->
-  <view class='goodcart' wx:for="{{goodslist}}" wx:for-item="goodinfo" wx:key="index" data-id="{{goodslist.id}}">
-  <!-- 商品图片 -->
-    <view class='goodimg'>
-      <image src='{{goodinfo.pic_url}}' mode='widthFix'></image>
-    </view>
-    <!-- 商品文字描述 -->
-    <view class='goodtext'>
-      <view class='goodname'>{{goodinfo.name}}</view>
-      <view class='gooddesc'>{{goodinfo.desc}}</view>
-      <view class='pricetype'>
-        <text class='goodprice'>{{goodinfo.price}}</text>
-        <text class='goodtype'>{{goodinfo.type}}</text>
+    <scroll-view scroll-y='{{true}}' class="scrollbox">
+      <!-- wx:for循环读取数据 -->
+      <view class='goodcart' wx:for="{{goodslist}}" wx:for-item="goodinfo" wx:key="index" data-id="{{goodinfo.id}}">
+      <!-- 商品图片 -->
+        <view class='goodimg'>
+          <image src='{{goodinfo.pic_url}}' mode='widthFix'></image>
+        </view>
+        <!-- 商品文字描述 -->
+        <view class='goodtext'>
+          <view class='goodname'>{{goodinfo.name}}</view>
+          <view class='gooddesc'>{{goodinfo.desc}}</view>
+          <view class='pricetype'>
+            <text class='goodprice'>{{goodinfo.price}}</text>
+            <text class='goodtype'>{{goodinfo.type}}</text>
+          </view>
+        </view>
       </view>
-    </view>
-  </view>
+    </scroll-view>
   </swiper-item>
   <!-- 按价格排序 -->
   <swiper-item>
-    <!-- wx:for循环读取数据 -->
-  <view class='goodcart' wx:for="{{goodslist}}" wx:for-item="goodinfo" wx:key="index">
-  <!-- 商品图片 -->
-    <view class='goodimg'>
-      <image src='{{goodinfo.pic_url}}' mode='widthFix'></image>
-    </view>
-    <!-- 商品文字描述 -->
-    <view class='goodtext'>
-      <view class='goodname'>{{goodinfo.name}}</view>
-      <view class='gooddesc'>{{goodinfo.desc}}</view>
-      <view class='pricetype'>
-        <text class='goodprice'>{{goodinfo.price}}</text>
-        <text class='goodtype'>{{goodinfo.type}}</text>
+      <scroll-view scroll-y='{{true}}' class="scrollbox">
+      <!-- wx:for循环读取数据 -->
+      <view class='goodcart' wx:for="{{goodslist}}" wx:for-item="goodinfo" wx:key="index" data-id="{{goodinfo.id}}">
+      <!-- 商品图片 -->
+        <view class='goodimg'>
+          <image src='{{goodinfo.pic_url}}' mode='widthFix'></image>
+        </view>
+        <!-- 商品文字描述 -->
+        <view class='goodtext'>
+          <view class='goodname'>{{goodinfo.name}}</view>
+          <view class='gooddesc'>{{goodinfo.desc}}</view>
+          <view class='pricetype'>
+            <text class='goodprice'>{{goodinfo.price}}</text>
+            <text class='goodtype'>{{goodinfo.type}}</text>
+          </view>
+        </view>
       </view>
-    </view>
-  </view>
+    </scroll-view>
   </swiper-item>
   <!-- 热销 -->
   <swiper-item>
-    <!-- wx:for循环读取数据 -->
-  <view class='goodcart' wx:for="{{goodslist}}" wx:for-item="goodinfo" wx:key="index">
-  <!-- 商品图片 -->
-    <view class='goodimg'>
-      <image src='{{goodinfo.pic_url}}' mode='widthFix'></image>
-    </view>
-    <!-- 商品文字描述 -->
-    <view class='goodtext'>
-      <view class='goodname'>{{goodinfo.name}}</view>
-      <view class='gooddesc'>{{goodinfo.desc}}</view>
-      <view class='pricetype'>
-        <text class='goodprice'>{{goodinfo.price}}</text>
-        <text class='goodtype'>{{goodinfo.type}}</text>
+      <scroll-view scroll-y='{{true}}' class="scrollbox">
+      <!-- wx:for循环读取数据 -->
+      <view class='goodcart' wx:for="{{goodslist}}" wx:for-item="goodinfo" wx:key="index" data-id="{{goodinfo.id}}">
+      <!-- 商品图片 -->
+        <view class='goodimg'>
+          <image src='{{goodinfo.pic_url}}' mode='widthFix'></image>
+        </view>
+        <!-- 商品文字描述 -->
+        <view class='goodtext'>
+          <view class='goodname'>{{goodinfo.name}}</view>
+          <view class='gooddesc'>{{goodinfo.desc}}</view>
+          <view class='pricetype'>
+            <text class='goodprice'>{{goodinfo.price}}</text>
+            <text class='goodtype'>{{goodinfo.type}}</text>
+          </view>
+        </view>
       </view>
-    </view>
-  </view>
+    </scroll-view>
   </swiper-item>
 </swiper>
   
