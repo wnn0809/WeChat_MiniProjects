@@ -9,7 +9,7 @@
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#008842",
+    "navigationBarBackgroundColor": "#FF6EB4",
     "navigationBarTitleText": "JJ生鲜",
     "navigationBarTextStyle": "white"
   },
@@ -23,7 +23,7 @@
       "selectedIconPath":"pages/img/icon/btn-tabs_07.png"
       },
       {
-        "pagePath": "pages/detail/detail",
+        "pagePath": "pages/goodsList/goodsList",
         "text": "分类",
         "iconPath": "pages/img/icon/btn-tabs_02.png",
         "selectedIconPath": "pages/img/icon/btn-tabs_08.png"

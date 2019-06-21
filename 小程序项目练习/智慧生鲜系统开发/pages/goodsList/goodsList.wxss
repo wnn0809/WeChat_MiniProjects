@@ -2,10 +2,31 @@
 page{
   height: 100%;
 }
-
+/* tab按钮 */
+.tabbtn {
+  padding: 7px 15px;
+  height: 70rpx;
+}
+.tabbtn ul {
+  height: 70rpx;
+  border: 1px solid #FF6EB4;
+  border-radius: 5px;
+  display: flex;
+}
+.tabbtn li {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+.tabbtn .active {
+  background: #FF6EB4;
+  color: #ffffff;
+}
+/* 商品列表 */
 .goodslist {
   border-top: 1px solid #cccccc;
-  margin-top: 10px;
   height: 100%;
 }
 .goodcart {

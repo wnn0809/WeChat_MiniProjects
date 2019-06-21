@@ -40,7 +40,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 2,
+			"current": 3,
 			"list": [
 				{
 					"id": -1,
@@ -61,6 +61,13 @@
 					"name": "goodsList",
 					"pathName": "pages/goodsList/goodsList",
 					"query": "id=234&name= goodsList",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "index",
+					"pathName": "pages/index/index",
+					"query": "name=index",
 					"scene": null
 				}
 			]
