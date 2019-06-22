@@ -1,0 +1,69 @@
+<!-- 我的 -->
+<!-- by tomorrownan -->
+<view class="minebox">
+  <view class="myInfo">
+    <view class="info">
+      <!-- 用户头像 -->
+      <view class="userAvatar">
+        <image src="{{userinfolist.avatarUrl}}"></image>
+      </view>
+      <!-- 昵称 -->
+      <view class="username">{{userinfolist.nickName}}</view>
+    </view>
+    
+    <!-- 授权登录 -->
+    <!-- 需要使用 button 来授权登录 -->
+    <button wx:if="{{flag}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo" class="button" bindtap="login">微信授权登录</button>
+  </view>
+
+  <view class="linkinfo">
+    <view class="link">
+      <view class="title">我的订单</view>
+      <view class="right-icon">
+        <text>>></text>
+      </view>
+    </view>
+    <view class="hr"></view>
+    <view class="link">
+      <view class="title">收货地址</view>
+      <view class="right-icon">
+        <text>>></text>
+      </view>
+    </view>
+    <view class="hr"></view>
+    <view class="link">
+      <view class="title">优惠券</view>
+      <view class="right-icon">
+        <text>>></text>
+      </view>
+    </view>
+    <view class="hr"></view>
+    <view class="link">
+      <view class="title">我的红包</view>
+      <view class="right-icon">
+        <text>>></text>
+      </view>
+    </view>
+    <view class="hr"></view>
+    <view class="link">
+      <view class="title">积分商城</view>
+      <view class="right-icon">
+        <text>>></text>
+      </view>
+    </view>
+    <view class="hr"></view>
+    <view class="link">
+      <view class="title">帮助</view>
+      <view class="right-icon">
+        <text>>></text>
+      </view>
+    </view>
+    <view class="link">
+      <view class="title">设置</view>
+      <view class="right-icon">
+        <text>>></text>
+      </view>
+    </view>
+    <view class="hr"></view>
+  </view>
+</view>

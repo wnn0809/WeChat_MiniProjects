@@ -1,1 +1,59 @@
 /* pages/my/my.wxss */
+.myInfo {
+  background: #FF6EB4;
+  height: 350rpx;
+}
+.info {
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.userAvatar {
+  height: 185rpx;
+  width: 185rpx;
+}
+.userAvatar image{
+  height: 150rpx;
+  width: 150rpx;
+  border-radius: 50%;
+  margin-top: -11rpx;
+  margin-left: -30rpx;
+
+}
+.username {
+  color: #ffffff;
+  margin-top: 200rpx;
+  margin-left: -170rpx;
+
+}
+
+.button {
+  width: 80%;
+  font-size: 14px;
+  color: #FF6EB4;
+}
+.hr {
+  width: 100%;
+  height: 1rpx;
+  background: #cccccc;
+}
+.linkinfo {
+  /* margin-top: 100rpx; */
+  font-size: 15px;
+}
+.link {
+  height: 100rpx;
+  display: flex;
+  flex-direction: row;
+}
+.link .title {
+padding: 35rpx 0rpx 35rpx 40rpx;
+}
+.link .right-icon {
+  font-size: 15px;
+  position: absolute;
+  right: 35rpx;
+  padding-top: 35rpx;
+  color: #aaaaaa;
+}
