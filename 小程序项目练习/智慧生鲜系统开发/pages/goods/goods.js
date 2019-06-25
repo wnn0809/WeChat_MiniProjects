@@ -77,6 +77,38 @@ Page({
         "price": "￥26.9",
         "type": "500g/个",
         "pic_url": "https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3177330934,2805656105&fm=26&gp=0.jpg"
+      },
+      {
+        "id": "010",
+        "name": "8424西瓜大个儿，一个5斤起",
+        "desc": "夏季清凉密码=8424",
+        "price": "￥26.9",
+        "type": "500g/个",
+        "pic_url": "https://timgsa.baidu.com/timg?image&quality=80&siz…Fupload%2Fimage%2F20150822%2F1440227820646638.png"
+      },
+      {
+        "id": "011",
+        "name": "8424西瓜大个儿，一个5斤起",
+        "desc": "夏季清凉密码=8424",
+        "price": "￥26.9",
+        "type": "500g/个",
+        "pic_url": "https://timgsa.baidu.com/timg?image&quality=80&siz…ity%2F0178b25b3998e8a80121b994c9706b.jpg%402o.jpg"
+      },
+      {
+        "id": "012",
+        "name": "8424西瓜大个儿，一个5斤起",
+        "desc": "夏季清凉密码=8424",
+        "price": "￥26.9",
+        "type": "500g/个",
+        "pic_url": "https://timgsa.baidu.com/timg?image&quality=80&siz…0433d3ff7544343d965c10a41066afb4d914-H2qf5N_fw658"
+      },
+      {
+        "id": "013",
+        "name": "8424西瓜大个儿，一个5斤起",
+        "desc": "夏季清凉密码=8424",
+        "price": "￥26.9",
+        "type": "500g/个",
+        "pic_url": "https://timgsa.baidu.com/timg?image&quality=80&siz…%2Fcommunity%2F01792a5723055132f875a399c417fb.jpg"
       }
     ]
   },
@@ -85,7 +117,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
+    console.log(this.data.goodslist)
   },
 
   /**

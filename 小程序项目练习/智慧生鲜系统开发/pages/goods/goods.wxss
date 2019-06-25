@@ -35,8 +35,14 @@ page{
   border-bottom: 1px solid #aaaaaa;
   padding: 10px 15px;
 }
+.goodslist navigator{
+  display: flex;
+}
+.goodimg {
+  display: flex;
+}
 .goodimg image {
-  height: 170rpx;
+  height: 220rpx;
   width: 170rpx;
 }
 

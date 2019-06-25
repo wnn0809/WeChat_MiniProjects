@@ -48,13 +48,13 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 1,
+			"current": 0,
 			"list": [
 				{
-					"id": -1,
+					"id": 0,
 					"name": "order",
 					"pathName": "pages/order/order",
-					"query": "name=order",
+					"query": "id=001&&name=order",
 					"scene": null
 				},
 				{
@@ -66,9 +66,9 @@
 				},
 				{
 					"id": 2,
-					"name": "goodsList",
-					"pathName": "pages/goodsList/goodsList",
-					"query": "id=234&name= goodsList",
+					"name": "goods",
+					"pathName": "pages/goods/goods",
+					"query": "id=000&&name= goods",
 					"scene": null
 				},
 				{

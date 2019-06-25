@@ -1,11 +1,11 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/goods/goods",
     "pages/detail/detail",
     "pages/cart/cart",
     "pages/my/my",
-    "pages/order/order",
-    "pages/goodsList/goodsList"
+    "pages/order/order"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -23,7 +23,7 @@
       "selectedIconPath":"pages/img/icon/btn-tabs_07.png"
       },
       {
-        "pagePath": "pages/goodsList/goodsList",
+        "pagePath": "pages/goods/goods",
         "text": "分类",
         "iconPath": "pages/img/icon/btn-tabs_02.png",
         "selectedIconPath": "pages/img/icon/btn-tabs_08.png"

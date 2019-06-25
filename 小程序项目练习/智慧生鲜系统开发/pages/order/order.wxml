@@ -2,19 +2,19 @@
 <view class='order'>
 <!-- 使用vant 卡片组件 -->
   <van-card
-    num='2'
+    num='{{orderGood.num}}'
     tag="HOT"
-    price="19.00"
-    desc="多肉多汁，味道甜美"
-    title="山前五月杨梅市"
-    thumb="http://techan.raoping.com/images/201503/goods_img/17_P_1427246587408.jpg"
+    price="{{orderGood.price}}"
+    desc="{{orderGood.desc}}"
+    title="{{orderGood.name}}"
+    thumb="{{orderGood.pic_url}}"
   >
   </van-card>
   <!-- 使用vant 面板组件 -->
   <van-panel>
     <view style='padding:15px'>
       <text class='price'>总价</text>
-      <text class='totalprice'>38元</text>
+      <text class='totalprice'>{{(orderGood.price*orderGood.num)}}元</text>
     </view>
   </van-panel>
   <!-- 定义模板 -->
@@ -71,7 +71,7 @@
 </view>
 
 
-
+<navigator url="../index/index?" open-type="switchTab">
 <!-- 提交订单 -->
 <form bindsubmit='fromsubmit'>
   <!-- 使用模板 -->
@@ -79,3 +79,4 @@
   <button form-type="submit" type='primary' class="submitorder">提交订单
   </button>
 </form>
+</navigator>

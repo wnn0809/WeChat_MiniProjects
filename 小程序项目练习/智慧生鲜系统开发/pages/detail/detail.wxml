@@ -35,10 +35,12 @@
         type="warning"
         bind:click="onClickButton"
       />
+      <navigator url="../order/order?id={{detailGood.id}}">
       <van-goods-action-button
         text="立即购买"
         bind:click="onClickButton"
       />
+      </navigator>
     </van-goods-action>
   </view>
 </view>
