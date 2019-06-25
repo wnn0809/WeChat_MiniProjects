@@ -5,14 +5,23 @@ Page({
    * 页面的初始数据
    */
   data: {
-    
+    slides: {},
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
+    var self = this
+    wx.request({
+      url: 'https://www.easy-mock.com/mock/5d01eca83066922c5416c8ac/Ananfresh/slides',
+      success:function(res){
+        console.log(res.data.data)
+        self.setData({
+          slides: res.data.data
+        })
+      }
+    })
   },
 
   /**

@@ -49,6 +49,9 @@
     "van-notice-bar": "zanui/dist/notice-bar/index",
     "van-icon": "zanui/dist/icon/index",
     "van-panel": "zanui/dist/panel/index",
-    "van-field": "zanui/dist/field/index"
+    "van-field": "zanui/dist/field/index",
+    "van-goods-action": "zanui/dist/goods-action/index",
+    "van-goods-action-icon": "zanui/dist/goods-action-icon/index",
+    "van-goods-action-button": "zanui/dist/goods-action-button/index"
   }
 }

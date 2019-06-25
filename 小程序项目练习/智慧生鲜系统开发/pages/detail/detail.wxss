@@ -1,0 +1,12 @@
+
+page {
+  height: 100%;
+}
+.detailInfo li{
+  display: flex;
+  flex-direction: row;
+  padding: 20rpx 30rpx;
+  color: #7A7A7A;
+  border-bottom: 1px solid #ccc;
+  font-size: 14px;
+}

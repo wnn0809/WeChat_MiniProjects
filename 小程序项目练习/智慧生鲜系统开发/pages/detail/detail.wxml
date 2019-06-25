@@ -1,1 +1,44 @@
-<view>12345</view>
+<!-- 详情页 -->
+<view class="detailBox">
+  <view class="detail-list">
+    <scroll-view scroll-y="true" style="height:90%;">
+      <view class="detailPic"><image src="{{detailGood.pic_url}}"></image></view>
+      <view class="detailInfo">
+        <ul>
+          <li>名称 {{detailGood.name}}</li>
+          <li>源产品 产地 产自泰国,浙江配送</li>
+          <li>描述 {{detailGood.desc}}</li>
+          <li>价格 {{detailGood.price}}</li>
+          <li>规格 {{detailGood.type}}</li>
+          <li>评价 (15172)</li>
+          <li>问大家 (15172)</li>
+          <li>图文详情</li>
+        </ul>
+      </view>
+    </scroll-view>
+  </view>
+  <!-- 购物车 -->
+  <view>
+    <van-goods-action>
+      <van-goods-action-icon
+        icon="chat-o"
+        text="客服"
+        bind:click="onClickIcon"
+      />
+      <van-goods-action-icon
+        icon="cart-o"
+        text="购物车"
+        bind:click="onClickIcon"
+      />
+      <van-goods-action-button
+        text="加入购物车"
+        type="warning"
+        bind:click="onClickButton"
+      />
+      <van-goods-action-button
+        text="立即购买"
+        bind:click="onClickButton"
+      />
+    </van-goods-action>
+  </view>
+</view>

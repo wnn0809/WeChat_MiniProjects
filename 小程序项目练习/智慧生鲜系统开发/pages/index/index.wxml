@@ -15,19 +15,15 @@
 <view class='slide'>
 <!-- 轮播图 -->
 <swiper class='slide' autoplay='true' indicator-dots='true' indicator-color='white' circular="true" interval="2000">
-  <swiper-item>
-    <image mode="widthFix"  src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1560506564518&di=4f88677f52e8dc56f52c00975828f32a&imgtype=0&src=http%3A%2F%2Fwww.huishi365.com%2Fupload%2Fimage%2F20150822%2F1440227820646638.png'></image>
-  </swiper-item>
-  <swiper-item>
-    <image mode="widthFix" src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1560506351458&di=4b44e7c2d4fcd430475d09bbe8b7ac93&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F0178b25b3998e8a80121b994c9706b.jpg%402o.jpg'></image>
-  </swiper-item>
-  <swiper-item>
-    <image mode="widthFix" src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1560506485258&di=6901e75e0731b945d859d59b011d640f&imgtype=0&src=http%3A%2F%2Fhbimg.b0.upaiyun.com%2F5f2236c930433d3ff7544343d965c10a41066afb4d914-H2qf5N_fw658'></image>
-  </swiper-item>
-  <swiper-item>
-    <image mode="widthFix" src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1560506542145&di=2be76514a338e0fded3762a7b0aa7b02&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F01792a5723055132f875a399c417fb.jpg'></image>
-  </swiper-item>
+  <block wx:for="{{slides}}" wx:key="index">
+    <swiper-item>
+      <navigator url="../detail/detail?id={{item.id}}">
+        <image mode="widthFix"  src='{{item.image}}'></image>
+      </navigator>
+    </swiper-item>
+  </block>
 </swiper>
+
 <view class='hr'></view>
 </view>
 <!-- 提示 -->
