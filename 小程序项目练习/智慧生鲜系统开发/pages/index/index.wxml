@@ -10,7 +10,7 @@
   shape="round"
   background="#eee"
 >
-  <view slot="action" bind:tap="onSearch">搜索</view>
+<view slot="action" bind:tap="onSearch">搜索</view>
 </van-search>
 </view>
 <view class='slide'>
