@@ -1,3 +1,5 @@
+<!-- goods.wxml -->
+<!-- by tomorrownan -->
 <view class='tabbtn'>
   <ul>
     <li class="{{current==0 ? 'active' : ''}}" bindtap="switchCur" data-index="0">默认</li>

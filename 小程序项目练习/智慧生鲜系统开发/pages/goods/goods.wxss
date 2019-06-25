@@ -38,22 +38,20 @@ page{
 .goodslist navigator{
   display: flex;
 }
-.goodimg {
-  display: flex;
-}
+
 .goodimg image {
   height: 220rpx;
-  width: 170rpx;
+  width: 200rpx;
 }
 
 .goodtext {
-  padding-left: 10px;
+  padding-left: 35rpx;
 }
 .goodname {
   color:#666666;
   overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
+  /* white-space: nowrap; */
+  /* text-overflow: ellipsis; */
 }
 .gooddesc {
   color: #8f7d7d;

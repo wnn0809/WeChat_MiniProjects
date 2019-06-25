@@ -1,4 +1,5 @@
 <!-- 详情页 -->
+<!-- by tomorrownan -->
 <view class="detailBox">
   <view class="detail-list">
     <scroll-view scroll-y="true" style="height:90%;">

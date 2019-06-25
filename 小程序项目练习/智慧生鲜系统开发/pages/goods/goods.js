@@ -8,7 +8,7 @@ Page({
     goodslist: [
       {
         "id": "001",
-        "name": "泰国龙眼500g*1盒【新人特惠】",
+        "name": "泰国龙眼500g*1盒 新品【新人特惠】",
         "desc": "在你的眼里，有我才甜蜜",
         "price": "￥9.9",
         "type": "500g/盒",
@@ -16,7 +16,7 @@ Page({
       },
       {
         "id": "002",
-        "name": "伊利畅轻燕麦+草莓风味乳",
+        "name": "伊利畅轻燕麦+草莓风味乳 酸甜可口",
         "desc": "这杯酸奶太有料了，要嚼着吃",
         "price": "￥7.8",
         "type": "300ml/杯",
@@ -24,7 +24,7 @@ Page({
       },
       {
         "id": "003",
-        "name": "进口香蕉每袋500g起",
+        "name": "进口弗洛加州香蕉每袋500g起",
         "desc": "跟鲜花一起运过来的香蕉",
         "price": "￥6.8",
         "type": "500g/袋",
@@ -32,7 +32,7 @@ Page({
       },
       {
         "id": "004",
-        "name": "新疆吐鲁番哈密瓜1个250g起",
+        "name": "新疆吐鲁番地区哈密瓜1个250g起",
         "desc": "咬一口吐鲁番风情的甜脆",
         "price": "￥19.8",
         "type": "250g/个",
@@ -84,7 +84,7 @@ Page({
         "desc": "夏季清凉密码=8424",
         "price": "￥26.9",
         "type": "500g/个",
-        "pic_url": "https://timgsa.baidu.com/timg?image&quality=80&siz…Fupload%2Fimage%2F20150822%2F1440227820646638.png"
+        "pic_url": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1560506564518&di=4f88677f52e8dc56f52c00975828f32a&imgtype=0&src=http%3A%2F%2Fwww.huishi365.com%2Fupload%2Fimage%2F20150822%2F1440227820646638.png"
       },
       {
         "id": "011",
@@ -92,7 +92,7 @@ Page({
         "desc": "夏季清凉密码=8424",
         "price": "￥26.9",
         "type": "500g/个",
-        "pic_url": "https://timgsa.baidu.com/timg?image&quality=80&siz…ity%2F0178b25b3998e8a80121b994c9706b.jpg%402o.jpg"
+        "pic_url": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1560506351458&di=4b44e7c2d4fcd430475d09bbe8b7ac93&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F0178b25b3998e8a80121b994c9706b.jpg%402o.jpg"
       },
       {
         "id": "012",
@@ -100,7 +100,7 @@ Page({
         "desc": "夏季清凉密码=8424",
         "price": "￥26.9",
         "type": "500g/个",
-        "pic_url": "https://timgsa.baidu.com/timg?image&quality=80&siz…0433d3ff7544343d965c10a41066afb4d914-H2qf5N_fw658"
+        "pic_url": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1560506485258&di=6901e75e0731b945d859d59b011d640f&imgtype=0&src=http%3A%2F%2Fhbimg.b0.upaiyun.com%2F5f2236c930433d3ff7544343d965c10a41066afb4d914-H2qf5N_fw658"
       },
       {
         "id": "013",
@@ -108,7 +108,7 @@ Page({
         "desc": "夏季清凉密码=8424",
         "price": "￥26.9",
         "type": "500g/个",
-        "pic_url": "https://timgsa.baidu.com/timg?image&quality=80&siz…%2Fcommunity%2F01792a5723055132f875a399c417fb.jpg"
+        "pic_url": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1560506542145&di=2be76514a338e0fded3762a7b0aa7b02&imgtype=0&src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F01792a5723055132f875a399c417fb.jpg"
       }
     ]
   },

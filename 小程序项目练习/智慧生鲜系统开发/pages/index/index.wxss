@@ -1,11 +1,16 @@
 /**index.wxss**/
 
+.slide image{
+  width: 100%;
+  height: 100%;
+}
+
 .tip {
   height: 45rpx;
 }
 
 .vancard{
-  margin-top: 5px;
+  margin-top: 10rpx;
 }
 
 .hr{
