@@ -19,8 +19,8 @@
     </scroll-view>
   </view>
   <!-- 购物车 -->
-  <view>
-    <van-goods-action>
+  <view class="cart-buy">
+    <!-- <van-goods-action>
       <van-goods-action-icon
         icon="chat-o"
         text="客服"
@@ -42,6 +42,14 @@
         bind:click="onClickButton"
       />
       </navigator>
-    </van-goods-action>
+    </van-goods-action> -->
+    <view class="cartBtn">
+      <text class="text" bindtap="addcart">加入购入车</text>
+    </view>
+
+    <view class="buyBtn">
+      <text class="text" bindtap="gobuy">立即购买</text>
+    </view>
+
   </view>
 </view>
