@@ -2,8 +2,8 @@
 <!-- by tomorrownan -->
 <view class="detailBox">
   <view class="detail-list">
-    <scroll-view scroll-y="true" style="height:90%;">
-      <view class="detailPic"><image src="{{detailGood.pic_url}}"></image></view>
+    <scroll-view scroll-y="true" class="scrollBox">
+      <view class="Pic"><image src="{{detailGood.pic_url}}"></image></view>
       <view class="detailInfo">
         <ul>
           <li>名称 {{detailGood.name}}</li>
@@ -15,7 +15,12 @@
           <li>问大家 (15172)</li>
           <li>图文详情</li>
         </ul>
+        
       </view>
+      <image class="detailPic" src="{{detailGood.detailPic}}" mode="widthFix"></image>
+      <image class="detailPic" src="{{detailGood.detailPic}}" mode="widthFix"></image>
+      <image class="detailPic" src="{{detailGood.detailPic}}" mode="widthFix"></image>
+      <image class="detailPic" src="{{detailGood.detailPic}}" mode="widthFix"></image>
     </scroll-view>
   </view>
   <!-- 购物车 -->
@@ -44,11 +49,11 @@
       </navigator>
     </van-goods-action> -->
     <view class="cartBtn">
-      <text class="text" bindtap="addcart">加入购入车</text>
+      <text class="text" bindtap="addcart" data-id="{{detailGood.id}}" data-title="{{detailGood.name}}" data-image="{{detailGood.pic_url}}" data-price="{{detailGood.price}}">加入购入车</text>
     </view>
 
     <view class="buyBtn">
-      <text class="text" bindtap="gobuy">立即购买</text>
+      <text class="text" bindtap="gobuy" data-id="{{detailGood.id}}">立即购买</text>
     </view>
 
   </view>

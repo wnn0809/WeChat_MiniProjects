@@ -46,10 +46,5 @@ Page({
       
     )
   },
-  // changeCur: function(e) {
-  //   console.log(e.detail),
-  //   this.setData({
-  //     current: e.detail.current
-  //   })
-  // }
+  
 })

@@ -1,6 +1,7 @@
 <!-- cart.wxml -->
 <!-- by tomorrownan -->
 <view class="cartbox">
+
   <view class="cartimg">
     <image src="http://img02.yiguo.com/e/web/150930/00981/161016/cart-none.png"></image>
   </view>
