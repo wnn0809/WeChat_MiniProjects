@@ -115,10 +115,14 @@ Page({
   },
   
   pay: function (event) {
-    wx:wx.showToast({
-      title: '支付已关闭',
-      duration: 2000
+    // wx:wx.showToast({
+    //   title: '支付已关闭',
+    //   duration: 2000
+    // })
+    wx.showModal({
+      title: '支付提示',
+      content: '支付接口已关闭',
+      showCancel: false
     })
-    
   }
 })
