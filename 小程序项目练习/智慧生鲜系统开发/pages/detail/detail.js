@@ -83,5 +83,11 @@ Page({
     } catch (e) {
       // console.log(e)
      }
+  },
+  gobuy:function(event){
+    var goodId = event.target.dataset.id
+    wx:wx.navigateTo({
+      url: '../order/order?id=' + goodId
+    })
   }
 })

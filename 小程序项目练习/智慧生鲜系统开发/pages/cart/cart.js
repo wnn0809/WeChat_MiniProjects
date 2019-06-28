@@ -29,6 +29,7 @@ Page({
     for (var i = 0;i<this.data.cartItems.length;i++){
       if(this.data.cartItems[i].selected){
         sum += this.data.cartItems[i].value * this.data.cartItems[i].price
+        sum = parseFloat(sum).toFixed(1)
       }
     }
     this.setData({
@@ -130,6 +131,12 @@ Page({
     this.getsumtotal()
     // 更新缓存
     wx.setStorageSync("cartItems", cartItems)
+  },
+  gobuy: function (event) {
+    var goodId = event.target.dataset.id
+    wx: wx.navigateTo({
+      url: '../order/order?id=' + goodId
+    })
   }
   
 })

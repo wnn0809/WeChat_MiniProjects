@@ -25,29 +25,6 @@
   </view>
   <!-- 购物车 -->
   <view class="cart-buy">
-    <!-- <van-goods-action>
-      <van-goods-action-icon
-        icon="chat-o"
-        text="客服"
-        bind:click="onClickIcon"
-      />
-      <van-goods-action-icon
-        icon="cart-o"
-        text="购物车"
-        bind:click="onClickIcon"
-      />
-      <van-goods-action-button
-        text="加入购物车"
-        type="warning"
-        bind:click="onClickButton"
-      />
-      <navigator url="../order/order?id={{detailGood.id}}">
-      <van-goods-action-button
-        text="立即购买"
-        bind:click="onClickButton"
-      />
-      </navigator>
-    </van-goods-action> -->
     <view class="cartBtn">
       <text class="text" bindtap="addcart" data-id="{{detailGood.id}}" data-title="{{detailGood.name}}" data-image="{{detailGood.pic_url}}" data-price="{{detailGood.price}}">加入购入车</text>
     </view>

@@ -1,8 +1,7 @@
 <!-- cart.wxml -->
 <!-- by tomorrownan -->
-<view class="cartbox">
-
-  <view class="cartgoods" wx:for="{{cartItems}}" wx:key="{{item.id}}">
+<view class="cartbox" wx:for="{{cartItems}}" wx:key="{{item.id}}">
+  <view class="cartgoods">
     <view class="icon" data-id="{{item.id}}" data-index="{{index}}">
       <icon type="success" wx:if="{{item.selected}}" color="#FF6EB4" size="20" data-index="{{index}}" bindtap="oneSelected"></icon>
       <icon wx:else type="circle" size="20" data-index="{{index}}" bindtap="oneSelected"></icon>
@@ -30,18 +29,7 @@
       <text>合计:</text>
       <text class="money">{{total}}元</text>
     </view>
-    <view class="buyBtn">立即购买</view>
+    <!-- navigator:页面链接 open-type属性表示跳转的方式，默认是navigate，需要跳转到tabbar页面时需要指定open-type为switchTab -->
+    <view class="buyBtn" bindtap="gobuy" data-id="{{item.id}}">立即购买</view>
   </view>
-
-  <!-- <view class="cartimg">
-    <image src="http://img02.yiguo.com/e/web/150930/00981/161016/cart-none.png"></image>
-  </view>
-  <view class="carttip">购物车空空如也~~~~</view>
-  
-  <!-- navigator:页面链接 open-type属性表示跳转的方式，默认是navigate，需要跳转到tabbar页面时需要指定open-type为switchTab -->
-  <!-- <navigator url="../goods/goods?" open-type="switchTab">
-    <view class="cartbtn">
-        <button type="warn" >去购物</button>
-    </view>
-  </navigator> --> 
 </view>

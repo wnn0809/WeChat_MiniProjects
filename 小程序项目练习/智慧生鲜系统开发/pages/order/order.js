@@ -106,7 +106,7 @@ Page({
       }
     })
 
-    console.log(this.data.orderGood)
+    // console.log(this.data.orderGood)
   },
 
   onChange(event) {
@@ -114,9 +114,14 @@ Page({
     // console.log(event.detail);
   },
   
-  
-  fromsubmit: function (e){
-    console.log('form发生了submit事件，携带数据为：', e.detail.value);
-    
+  pay: function (event) {
+    console.log(event)
+    var goodId = event.target.dataset.id
+    wx: wx.showModal({
+      title: '支付提示',
+      content: '支付接口未开启',
+      showCancel: true,
+      success: function (res) { }
+    })
   }
 })

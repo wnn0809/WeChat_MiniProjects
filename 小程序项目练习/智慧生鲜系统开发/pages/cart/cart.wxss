@@ -87,17 +87,3 @@ Page {
   color: #ffffff;
   text-align: center;
 }
-
-
-.cartimg image {
-  height: 200rpx;
-  width: 200rpx;
-
-}
-.carttip {
-  color: #FF6EB4;
-}
-
-.cartbtn {
-  width: 300rpx;
-}

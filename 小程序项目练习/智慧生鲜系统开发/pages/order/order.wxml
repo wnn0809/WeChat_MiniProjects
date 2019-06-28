@@ -75,7 +75,7 @@
 <form bindsubmit='fromsubmit'>
   <!-- 使用模板 -->
   <template is="van-field" data="{{...value}}"/>
-  <navigator url="../index/index?" open-type="switchTab">
-    <button form-type="submit" type='primary' class="submitorder">提交订单</button>
-  </navigator>
+  <!-- <navigator url="../index/index?" open-type="switchTab"> -->
+    <button form-type="submit" type='primary' class="submitorder" bindtap="pay" data-id="{{orderGood.id}}">微信支付</button>
+  <!-- </navigator> -->
 </form>
