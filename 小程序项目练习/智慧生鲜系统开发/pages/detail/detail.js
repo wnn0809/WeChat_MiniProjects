@@ -51,7 +51,7 @@ Page({
   addcart:function(e){
     // console.log(e)
     var cartItems = wx.getStorageSync("cartItems") || []
-    // 判断购物车中此商品是否已经存在，存在时flag返回商品对象数据
+    // 判断购物车中此商品是否已经存在，存在时flag返回商品对象数据,不存在返回undefined
     var flag = cartItems.find(function(array){
       return array.id === e.target.dataset.id
     })

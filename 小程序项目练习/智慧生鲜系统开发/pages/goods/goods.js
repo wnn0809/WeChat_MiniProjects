@@ -16,7 +16,7 @@ Page({
     wx:wx.request({
       url: 'https://www.easy-mock.com/mock/5d01eca83066922c5416c8ac/Ananfresh/goodsList',
       success: function (res) {
-        console.log(res.data.data)
+        // console.log(res.data.data)
         self.setData({
           goodslist: res.data.data
         })

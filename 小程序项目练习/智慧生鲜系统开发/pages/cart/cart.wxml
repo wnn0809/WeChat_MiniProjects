@@ -4,15 +4,15 @@
 
   <view class="cartgoods" wx:for="{{cartItems}}" wx:key="{{item.id}}">
     <view class="icon" data-id="{{item.id}}" data-index="{{index}}">
-      <icon type="success" wx:if="{{item.selected}}" color="#FF6EB4" size="20" data-index="{{index}}"></icon>
-      <icon wx:else type="circlr" size="20" data-index="{{index}}"></icon>
+      <icon type="success" wx:if="{{item.selected}}" color="#FF6EB4" size="20" data-index="{{index}}" bindtap="oneSelected"></icon>
+      <icon wx:else type="circle" size="20" data-index="{{index}}" bindtap="oneSelected"></icon>
     </view>
     <view class="goodPic">
       <image src="{{item.image}}"></image>
     </view>
     <view class="rightbox">
       <text class="goodName">{{item.title}}</text>
-      <view class="goodPrice">{{item.price}}</view>
+      <view class="goodPrice">￥{{item.price}}</view>
       <text class="input reduce" bindtap="reduce" data-index="{{index}}">-</text>
       <text class="input count">{{item.value}}</text>
       <text class="input add" bindtap="add" data-index="{{index}}">+</text>
@@ -22,13 +22,13 @@
 
   <view class="footer">
     <view class="selectall">
-      <icon type="success" wx:if="{{checkedAll}}" color="#FF6EB4" size="20"></icon>
-      <icon wx:else type="circlr" size="20"></icon>
+      <icon wx:if="{{checkedAll}}" type="success" color="#FF6EB4" size="20" bindtap="allSelected" data-index="{{index}}"></icon>
+      <icon wx:else type="circle" size="20" bindtap="allSelected" data-index="{{index}}"></icon>
       <text class="all">全选</text>
     </view>
     <view class="sum">
       <text>合计:</text>
-      <text class="money">1200元</text>
+      <text class="money">{{total}}元</text>
     </view>
     <view class="buyBtn">立即购买</view>
   </view>
