@@ -1,22 +1,24 @@
 <!-- cart.wxml -->
 <!-- by tomorrownan -->
-<view class="cartbox" wx:for="{{cartItems}}" wx:key="{{item.id}}">
-  <view class="cartgoods">
-    <view class="icon" data-id="{{item.id}}" data-index="{{index}}">
-      <icon type="success" wx:if="{{item.selected}}" color="#FF6EB4" size="20" data-index="{{index}}" bindtap="oneSelected"></icon>
-      <icon wx:else type="circle" size="20" data-index="{{index}}" bindtap="oneSelected"></icon>
-    </view>
-    <view class="goodPic">
-      <image src="{{item.image}}"></image>
-    </view>
-    <view class="rightbox">
-      <text class="goodName">{{item.title}}</text>
-      <view class="goodPrice">￥{{item.price}}</view>
-      <text class="input reduce" bindtap="reduce" data-index="{{index}}">-</text>
-      <text class="input count">{{item.value}}</text>
-      <text class="input add" bindtap="add" data-index="{{index}}">+</text>
-    </view>
-    <view class="delete"><image src="../img/icon/delete.png" bindtap="delete" data-index="{{index}}"></image></view>
+<view class="cartbox">
+  <view wx:for="{{cartItems}}" wx:key="{{item.id}}">
+    <view class="cartgoods" >
+      <view class="icon" data-id="{{item.id}}" data-index="{{index}}">
+        <icon type="success" wx:if="{{item.selected}}" color="#FF6EB4" size="20" data-index="{{index}}" bindtap="oneSelected"></icon>
+        <icon wx:else type="circle" size="20" data-index="{{index}}" bindtap="oneSelected"></icon>
+      </view>
+      <view class="goodPic">
+        <image src="{{item.image}}"></image>
+      </view>
+      <view class="rightbox">
+        <text class="goodName">{{item.title}}</text>
+        <view class="goodPrice">￥{{item.price}}</view>
+        <text class="input reduce" bindtap="reduce" data-index="{{index}}">-</text>
+        <text class="input count">{{item.value}}</text>
+        <text class="input add" bindtap="add" data-index="{{index}}">+</text>
+      </view>
+      <view class="delete"><image src="../img/icon/delete.png" bindtap="delete" data-index="{{index}}"></image>
+      </view>
   </view>
 
   <view class="footer">
@@ -32,4 +34,6 @@
     <!-- navigator:页面链接 open-type属性表示跳转的方式，默认是navigate，需要跳转到tabbar页面时需要指定open-type为switchTab -->
     <view class="buyBtn" bindtap="gobuy" data-id="{{item.id}}">立即购买</view>
   </view>
+  </view>
+  
 </view>

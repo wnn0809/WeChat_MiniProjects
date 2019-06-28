@@ -29,9 +29,9 @@ Page({
     for (var i = 0;i<this.data.cartItems.length;i++){
       if(this.data.cartItems[i].selected){
         sum += this.data.cartItems[i].value * this.data.cartItems[i].price
-        sum = parseFloat(sum).toFixed(1)
       }
     }
+    sum = parseFloat(sum).toFixed(1)
     this.setData({
       total:sum
     })
