@@ -2,15 +2,46 @@
 <!-- by tomorrownan -->
 <view class="cartbox">
 
-  <view class="cartimg">
+  <view class="cartgoods" wx:for="{{cartItems}}" wx:key="{{item.id}}">
+    <view class="icon" data-id="{{item.id}}" data-index="{{index}}">
+      <icon type="success" wx:if="{{item.selected}}" color="#FF6EB4" size="20" data-index="{{index}}"></icon>
+      <icon wx:else type="circlr" size="20" data-index="{{index}}"></icon>
+    </view>
+    <view class="goodPic">
+      <image src="{{item.image}}"></image>
+    </view>
+    <view class="rightbox">
+      <text class="goodName">{{item.title}}</text>
+      <view class="goodPrice">{{item.price}}</view>
+      <text class="input reduce" bindtap="reduce" data-index="{{index}}">-</text>
+      <text class="input count">{{item.value}}</text>
+      <text class="input add" bindtap="add" data-index="{{index}}">+</text>
+    </view>
+    <view class="delete"><image src="../img/icon/delete.png" bindtap="delete" data-index="{{index}}"></image></view>
+  </view>
+
+  <view class="footer">
+    <view class="selectall">
+      <icon type="success" wx:if="{{checkedAll}}" color="#FF6EB4" size="20"></icon>
+      <icon wx:else type="circlr" size="20"></icon>
+      <text class="all">全选</text>
+    </view>
+    <view class="sum">
+      <text>合计:</text>
+      <text class="money">1200元</text>
+    </view>
+    <view class="buyBtn">立即购买</view>
+  </view>
+
+  <!-- <view class="cartimg">
     <image src="http://img02.yiguo.com/e/web/150930/00981/161016/cart-none.png"></image>
   </view>
   <view class="carttip">购物车空空如也~~~~</view>
   
   <!-- navigator:页面链接 open-type属性表示跳转的方式，默认是navigate，需要跳转到tabbar页面时需要指定open-type为switchTab -->
-  <navigator url="../goods/goods?" open-type="switchTab">
+  <!-- <navigator url="../goods/goods?" open-type="switchTab">
     <view class="cartbtn">
         <button type="warn" >去购物</button>
     </view>
-  </navigator>
+  </navigator> --> 
 </view>

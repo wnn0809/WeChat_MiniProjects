@@ -2,15 +2,93 @@
 
 Page {
   height: 100%;
+  background: #F4F4F4;
 }
 .cartbox {
   height: 100%;
-  line-height: 85rpx;
+  /* line-height: 85rpx;
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: center;
+  justify-content: center; */
 }
+.cartgoods {
+  padding: 20rpx 20rpx;
+  display: flex;
+  font-size: 30rpx;
+  background: #ffffff;
+  border-bottom: 1px solid #cccccc;
+}
+.icon icon {
+  margin-top: 76rpx;
+}
+.goodPic image {
+  height: 220rpx;
+  width: 200rpx;
+}
+.rightbox {
+  padding-left: 20rpx;
+  line-height: 50rpx;
+}
+.goodPrice {
+  color: red;
+}
+.input {
+  display: block;
+  float: left;
+  height: 65rpx;
+  width: 65rpx;
+  line-height: 65rpx;
+  text-align: center;
+  font-size: 30rpx;
+  margin-top: 15rpx;
+}
+.reduce {
+  background:  #fbfbfb;
+}
+.count {
+  background:  #F4F4F4;
+}
+.add {
+  background: #fbfbfb;
+}
+.delete image{
+  height: 50rpx;
+  width: 50rpx;
+  margin-top: 90rpx;
+}
+
+.footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0rpx;
+  height: 85rpx;
+  background: #ffffff;
+  font-size: 32rpx;
+  padding-left: 20rpx;
+  line-height: 85rpx;
+  display: flex;
+}
+.footer icon {
+  padding-right: 16rpx;
+}
+.selectall {
+  flex: 1;
+}
+.sum {
+  flex: 1;
+}
+.money {
+  color: red;
+}
+.buyBtn {
+  flex: 1;
+  background: #FF6EB4;
+  color: #ffffff;
+  text-align: center;
+}
+
+
 .cartimg image {
   height: 200rpx;
   width: 200rpx;

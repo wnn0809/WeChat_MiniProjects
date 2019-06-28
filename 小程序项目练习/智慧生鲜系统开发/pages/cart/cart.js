@@ -4,7 +4,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    cartItems: []
+    cartItems: [],
+    checkedAll: true
   },
 
   /**
@@ -30,40 +31,52 @@ Page({
     self.setData({
       cartItems: cartItems
     })
+    // console.log(cartItems)
   },
 
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-    
-  },
+  add:function(event){
+    // console.log(event)
+    // 获取购物车中商品列表
+    var cartItems = this.data.cartItems
+    // 获取商品索引
+    var index = event.target.dataset.index
+    // 获取商品数量
+    var count = cartItems[index].value
+    // 点击时数量加1
+    count++
+    // 重新赋值
+    cartItems[index].value = count
+    this.setData({
+      cartItems: cartItems
+    })
 
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-    
+    // 更新缓存
+    wx.setStorageSync("cartItems", cartItems)
   },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
+  reduce:function(event){
+    // 获取购物车中商品列表
+    var cartItems = this.data.cartItems
+    // 获取商品索引
+    var index = event.target.dataset.index
+    // 获取商品数量
+    var count = cartItems[index].value
+    // 商品数量大于1时点击时数量减1
+    if (count==1){
+      // 重新赋值
+      cartItems[index].value = 1
+    }else{
+      count--
+      // 重新赋值
+      cartItems[index].value = count
+    }
     
+    
+    this.setData({
+      cartItems: cartItems
+    })
+
+    // 更新缓存
+    wx.setStorageSync("cartItems", cartItems)
   },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-    
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-    
-  }
+  
 })
