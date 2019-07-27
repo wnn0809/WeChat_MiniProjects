@@ -3,8 +3,16 @@
   <image class="movie-img" src="{{item.images.small}}"></image>
   <view class="movie-info">
     <view class="movie-title">{{item.title}}</view>
-    <view class="movie-score">观众评分  {{item.rating.average}}  分</view>
-    <view class="movie-cast" wx:for="{{item.casts}}">{{item.name}}</view>
-    <view class="movie-year">年份:{{item.year}}</view>
+    <view>
+    观众评分:  <text class="movie-score">{{item.rating.average}}</text>分
+      </view>
+    <view class="movie-cast">主演: 
+    <text wx:for="{{item.casts}}" wx:key="{{index}}">{{item.name}} </text>
+    
+    </view>
+    <view>年份: 
+      <text class="movie-year">{{item.year}}</text>
+    </view>
   </view>
+  <button class="movie-comment" bindtap="gotoComment" data-movieid="{{item.id}}">评价</button>
 </view>

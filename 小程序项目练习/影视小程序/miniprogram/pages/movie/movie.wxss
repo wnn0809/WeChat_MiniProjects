@@ -1,1 +1,35 @@
-/* miniprogram/pages/movie/profile.wxss */
+/* miniprogram/pages/movie/movie.wxss */
+
+.movie {
+  height: 280rpx;
+  display: flex;
+  padding: 10px;
+  border-bottom: 1px solid #cccccc;
+  font-size: 32rpx;
+}
+.movie-img {
+  width: 200rpx;
+  height: 100%;
+  margin-right: 20rpx;
+}
+.movie-info {
+  flex: 1;
+  line-height: 1.4;
+}
+.movie-title {
+  color: #666;
+  font-size: 40rpx;
+  font-weight: bolder;
+  margin-bottom: 8px;
+}
+.movie-score {
+  color: #faaf00;
+}
+.movie-comment {
+  height: 60rpx;
+  background: #E54847;
+  font-size: 26rpx;
+  color: #fff;
+  margin-top: 120rpx;
+  
+}
