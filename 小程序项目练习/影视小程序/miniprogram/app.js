@@ -7,7 +7,7 @@ App({
     } else {
       wx.cloud.init({
         // 此处请填入环境 ID, 环境 ID 可打开云控制台查看
-        env: 'my-env-id',
+        env: 'wechatcloud-6q6pz',
         traceUser: true,
       })
     }
