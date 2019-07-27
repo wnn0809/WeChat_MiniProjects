@@ -5,11 +5,28 @@
     <image class="detail-img" src="{{detail.images.large}}"></image>
     <view class="detail-right">
       <view class="detail-title">{{detail.title}}</view>
-      <view class="detail-original-title">{{detail.original_title}}</view>
+      <view class="detail-original-title">原名: {{detail.original_title}}</view>
       <view class="detail-score">{{detail.rating.average}}分</view>
       <view>{{detail.countries[0]}}/{{detail.durations[0]}}</view>
       <view>导演： {{detail.directors[0].name}}</view>
     </view>
   </view>
   <view class="detail-desc">{{detail.summary}}</view>
+  <view class="vant">
+    <!-- 评价 -->
+  <van-field
+    value="{{ content }}"
+    placeholder="写一些评价吧"
+    bind:change="onContentChange"
+  />
+  <!-- 评分 -->
+  <van-rate value="{{ score }}" bind:change="onScoreChange" />
+  <view class="upload">
+    <van-button type="warning">上传图片</van-button>
+  </view>
+  <view class="submit">
+    <van-button type="danger" size="large">提交评价</van-button>
+  </view>
+  </view>
+  
 </view>

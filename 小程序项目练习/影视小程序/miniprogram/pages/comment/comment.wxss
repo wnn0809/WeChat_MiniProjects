@@ -1,8 +1,11 @@
+
+.comment {
+  font-size: 30rpx;
+}
 .detail-container {
   height: 400rpx;
   filter: blur(40rpx);
   opacity: .4;
-  font-size: 30rpx;
 }
 .detail-mask {
   width: 100%;
@@ -14,12 +17,40 @@
   z-index: -1;
 }
 .detail-info {
+  height: 400rpx;
   display: flex;
+  position: fixed;
+  top: 0px;
+  padding: 5px;
 }
 .detail-img {
   width: 280rpx;
   height: 90%;
+  margin-right:20rpx;  
 }
 .detail-right {
   flex: 1;
+  line-height: 2;
+  color: #fff;
+}
+.detail-title {
+  font-size: 32rpx;
+  font-weight: bolder;
+}
+.detail-score {
+  color: #faaf00;
+  font-size: 32rpx;
+  font-weight: bolder;
+}
+.detail-desc {
+  margin-top: 20rpx;
+}
+.vant {
+  margin-top:10rpx; 
+}
+.upload {
+  margin-top: 10rpx;
+}
+.submit {
+  margin-top: 10rpx;
 }

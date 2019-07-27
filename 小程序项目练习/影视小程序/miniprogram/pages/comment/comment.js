@@ -4,9 +4,16 @@ Page({
    * 页面的初始数据
    */
   data: {
-    detail: {}
+    detail: {},
+    content: '',//评价的内容
+    score: 5
   },
+  onContentChange:function(event){
 
+  },
+  onScoreChange: function (event){
+    
+  },
   /**
    * 生命周期函数--监听页面加载
    */
