@@ -1,0 +1,49 @@
+
+.mine{
+   height: 400rpx;
+}
+.userAvatar {
+  width: 200rpx;
+  height: 200rpx;
+}
+.userNickName {
+  margin-top: 20rpx;
+}
+
+page{
+   background: #FF6EB4;
+}
+.myInfo {
+  background: #FF6EB4;
+  height: 350rpx;
+}
+.info {
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.userAvatar {
+  height: 185rpx;
+  width: 185rpx;
+}
+.userAvatar image{
+  height: 150rpx;
+  width: 150rpx;
+  border-radius: 50%;
+  margin-top: -11rpx;
+  margin-left: -30rpx;
+
+}
+.username {
+  color: #ffffff;
+  margin-top: 200rpx;
+  margin-left: -170rpx;
+
+}
+.button {
+  width: 80%;
+  font-size: 14px;
+  color: #fff;
+  background: #e0e0e0;
+}

@@ -1,4 +1,5 @@
 <view class="comment">
+<scroll-view>
   <view class="detail-container" style="background: url({{detail.images.large}}) no-repeat top/cover"></view>
   <view class="detail-mask"></view>
   <view class="detail-info">
@@ -22,11 +23,13 @@
   <!-- 评分 -->
   <van-rate value="{{ score }}" bind:change="onScoreChange" />
   <view class="upload">
-    <van-button type="warning">上传图片</van-button>
+    <van-button type="warning" bindtap="uploadImg">上传图片</van-button>
   </view>
+  <image wx:for="{{images}}" wx:key="{{index}}" src="{{item}}" class="comment-img"></image>
   <view class="submit">
-    <van-button type="danger" size="large">提交评价</van-button>
+    <van-button type="danger" size="large" bindtap="submit">提交评价</van-button>
   </view>
   </view>
   
+</scroll-view>
 </view>

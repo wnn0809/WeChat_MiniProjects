@@ -19,7 +19,7 @@
 .detail-info {
   height: 400rpx;
   display: flex;
-  position: fixed;
+  position: absolute;
   top: 0px;
   padding: 5px;
 }
@@ -53,4 +53,9 @@
 }
 .submit {
   margin-top: 10rpx;
+}
+.comment-img {
+  height: 200rpx;
+  width: 200rpx;
+  margin-right: 15rpx;
 }

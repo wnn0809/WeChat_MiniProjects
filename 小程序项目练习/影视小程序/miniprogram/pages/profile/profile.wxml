@@ -1,0 +1,19 @@
+
+<!-- <view class="mine">
+  <open-data type="userAvatarUrl" class="userAvatar"></open-data>
+<open-data type="userNickName" class="userNickName"></open-data>
+</view> -->
+ <view class="myInfo">
+    <view class="info">
+      <!-- 用户头像 -->
+      <view class="userAvatar">
+        <image src="{{userinfolist.avatarUrl}}"></image>
+      </view>
+      <!-- 昵称 -->
+      <view class="username">{{userinfolist.nickName}}</view>
+    </view>
+    
+    <!-- 授权登录 -->
+    <!-- 需要使用 button 来授权登录 -->
+    <button wx:if="{{flag}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo" class="button" bindtap="login">微信授权登录</button>
+  </view>
