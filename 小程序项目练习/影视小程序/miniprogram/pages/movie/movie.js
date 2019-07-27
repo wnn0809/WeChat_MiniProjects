@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    movieList: []
   },
 
   /**
@@ -15,8 +15,15 @@ Page({
     wx.cloud.callFunction({
       // 云函数的名称
       name:"movielist",
+      // 云函数的参数
+      start: this.data.movieList.length,
+      //每次请求10条数据
+      count: 10
       }).then(res=>{
         console.log(res)
+        this.setData({
+          movieList: this.data.movieList.concat(JSON.parse(res.result).subjects)
+        })
     }).catch(err=>{
       console.error(err)
     })

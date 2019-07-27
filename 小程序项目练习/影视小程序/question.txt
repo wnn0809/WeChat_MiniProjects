@@ -1,0 +1,10 @@
+1.使用vant weapp 组件引入时，在每个页面的json文件中设置component路径要正确。
+
+{
+  "usingComponents": {
+    "van-button": "../../miniprogram_npm/vant-weapp/button/index"
+    }
+}
+
+2.使用request.promise请求豆瓣电影接口无返回数据，并报错误。
+解决：云函数中和app.js文件中都要设置环境ID，二者对应。
