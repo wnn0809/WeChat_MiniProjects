@@ -4,14 +4,28 @@ Page({
    * 页面的初始数据
    */
   data: {
-    
+    detail: {}
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
+    var movieid = options.movieid.trim()
+    console.log(movieid)
+    wx.cloud.callFunction({
+      name: 'getdetail',
+      data: {
+        movieid: movieid
+      }
+    }).then(res=>{
+      console.log(res);
+      this.setData({
+        detail: JSON.parse(res.result)
+      })
+    }).catch(err=>{
+      console.error(err);
+    })
   },
 
   /**

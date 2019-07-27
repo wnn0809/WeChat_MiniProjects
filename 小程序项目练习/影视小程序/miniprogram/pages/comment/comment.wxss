@@ -1,0 +1,25 @@
+.detail-container {
+  height: 400rpx;
+  filter: blur(40rpx);
+  opacity: .4;
+  font-size: 30rpx;
+}
+.detail-mask {
+  width: 100%;
+  position: absolute;
+  height: 400rpx;
+  background: #333;
+  top:0;
+  left:0;
+  z-index: -1;
+}
+.detail-info {
+  display: flex;
+}
+.detail-img {
+  width: 280rpx;
+  height: 90%;
+}
+.detail-right {
+  flex: 1;
+}
