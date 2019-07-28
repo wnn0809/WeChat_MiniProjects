@@ -82,7 +82,7 @@ Page({
       }).then(res => {
         wx.hideLoading();
         wx.navigateTo({
-          url: '../commentnext/commentnext',
+          url: `../commentnext/commentnext?movieid=${this.data.movieId}`,
         })
         }).catch(err => {
           wx.hideLoading();
