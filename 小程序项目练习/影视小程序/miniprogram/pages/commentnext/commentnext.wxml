@@ -1,0 +1,12 @@
+
+<view class="main">
+  <view class="comment-result">评价成功</view>
+  <view class="btn">
+    <navigator url="../comment/comment">
+      <button class="comment-next" size="mini">继续评价</button>
+    </navigator>
+    <navigator url="../movie/movie" open-type="switchTab">
+      <button class="gotoNavbar" size="mini">返回首页</button>
+    </navigator>
+  </view>
+</view>

@@ -12,7 +12,6 @@ Page({
     images: [],//上传的图片
     fileIds: [],
     movieId: 0,
-    flag:false,
   },
   onContentChange:function(event){
     this.setData({
@@ -42,7 +41,7 @@ Page({
   },
   submit: function () {
     console.log(this.data.content)
-    wx.showToast({
+    wx.showLoading({
       title: '评价中',
     })
     // 1，上传图片到云存储.2,等云存储返回对应的fileID
@@ -82,11 +81,8 @@ Page({
         }
       }).then(res => {
         wx.hideLoading();
-        wx.showToast({
-          title: '评价成功',
-        })
-        this.setData({
-          flag: true
+        wx.navigateTo({
+          url: '../commentnext/commentnext',
         })
         }).catch(err => {
           wx.hideLoading();

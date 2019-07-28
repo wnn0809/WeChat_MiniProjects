@@ -1,0 +1,25 @@
+
+.main {
+  height: 400rpx;
+  background: #eeeeee;
+}
+.comment-result {
+  color: #faaf00;
+  text-align: center;
+  padding: 81rpx 0rpx;  
+  font-size: 40rpx;
+}
+.btn {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+.comment-next {
+  background: #faaf00;
+  color: #fff;
+}
+.gotoNavbar {
+  background: #faaf00;
+  color: #fff;
+}
