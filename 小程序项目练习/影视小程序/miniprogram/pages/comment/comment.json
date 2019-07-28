@@ -2,6 +2,7 @@
   "usingComponents": {
     "van-field": "../../miniprogram_npm/vant-weapp/field/index",
     "van-rate": "../../miniprogram_npm/vant-weapp/rate/index",
-    "van-button": "../../miniprogram_npm/vant-weapp/button/index"
+    "van-button": "../../miniprogram_npm/vant-weapp/button/index",
+    "van-notify": "../../miniprogram_npm/vant-weapp/notify/index"
   }
 }
