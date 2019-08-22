@@ -15,5 +15,9 @@
 }
 
 .slide{
+  height: 400px;
+}
+.slide image{
   height: 400rpx;
+  width: 100%;
 }

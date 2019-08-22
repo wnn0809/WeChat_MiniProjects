@@ -4,8 +4,11 @@
     <image src="../images/synLogo.png"></image>
   </view>
   <swiper class="slide" autoplay="true" indicator-dots="true" indicator-color="white" circular="true" interval="2000">
-    <block wx:for="{{slides}}" wx:key="id">
+    <!-- <block wx:for="{{slides}}" wx:key="id">
       <image mode="widthFix" src="{{item.image}}"></image>
-    </block>
+    </block> -->
+    <image src="../images/banner2.jpg"></image>
+    <image src="../images/banner3.jpg"></image>
+    <image src="../images/banner4.jpg"></image>
   </swiper>
 </view>
