@@ -8,6 +8,14 @@ Page({
       {
         id:"001",
         image:"../images/banner2.jpg"
+      },
+      {
+        id: "001",
+        image: "../images/banner3.jpg"
+      },
+      {
+        id: "001",
+        image: "../images/banner4.jpg"
       }
     ]
   },

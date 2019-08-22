@@ -4,20 +4,26 @@
 }
 .title {
   background: #e83828;
-  height: 200rpx;
+  height: 120rpx;
   width: 100%;
   text-align: center;
-  line-height: 200rpx;
 }
 .title image{
   height: 80rpx;
-  width: 300rpx
+  width: 300rpx;
+  margin-top: 20rpx;
 }
 
 .slide{
-  height: 400px;
+  height: 300rpx;
 }
 .slide image{
-  height: 400rpx;
+  height: 300rpx;
   width: 100%;
+}
+/* 内容 */
+.content .content-title{
+  text-align: center;
+  border-bottom: 1px solid #eeeeee;
+  color: #e83828;
 }
