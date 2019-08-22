@@ -1,0 +1,19 @@
+/*  */
+.header {
+
+}
+.title {
+  background: #e83828;
+  height: 200rpx;
+  width: 100%;
+  text-align: center;
+  line-height: 200rpx;
+}
+.title image{
+  height: 80rpx;
+  width: 300rpx
+}
+
+.slide{
+  height: 400rpx;
+}

@@ -8,3 +8,10 @@
 
 2.使用request.promise请求豆瓣电影接口无返回数据，并报错误。
 解决：云函数中和app.js文件中都要设置环境ID，二者对应。
+
+3. <image src="./images/synLogo.png"></image>
+image标签src属性默认路径都在pages下面，因为我建的images目录与pages是同级的，所以
+会报错如下：Failed to load local image resource /pages/images/synLogo.png 
+ the server responded with a status of 500 (HTTP/1.1 500 Internal Server Error) 
+ 
+ 解决方法：把图片目录放到pages目录下面。然后再<image src="../images/synLogo.png"></image>

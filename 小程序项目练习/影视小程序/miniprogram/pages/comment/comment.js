@@ -28,7 +28,7 @@ Page({
   uploadImg :function(){
     // 上传图片
     wx.chooseImage({
-      count: 9,
+      count: 3,
       sizeType: ['original', 'compressed'],
       sourceType: ['album', 'camera'],
       success:res => {
@@ -110,14 +110,14 @@ Page({
     this.setData({
       movieId: movieid
     })
-    console.log(movieid)
+    // console.log(movieid)
     wx.cloud.callFunction({
       name: 'getdetail',
       data: {
         movieid: movieid
       }
     }).then(res=>{
-      console.log(res);
+      // console.log(res);
       this.setData({
         detail: JSON.parse(res.result)
       })

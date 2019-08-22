@@ -1,31 +1,31 @@
 {
   "pages": [
     "pages/movie/movie",
-    "pages/profile/profile",
+    "pages/synway/synway",
     "pages/comment/comment",
     "pages/commentnext/commentnext"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#E54847",
-    "navigationBarTitleText": "最热影视",
+    "navigationBarBackgroundColor": "#e83828",
+    "navigationBarTitleText": "我在电影院等你",
     "navigationBarTextStyle": "white"
   },
   "tabBar": {
     "color": "#000",
-    "selectedColor": "#E54847",
+    "selectedColor": "#e83828",
     "list": [{
       "pagePath": "pages/movie/movie",
       "text": "电影",
-      "iconPath": "images/film.png",
-      "selectedIconPath": "images/film_active.png"
+      "iconPath": "pages/images/film.png",
+      "selectedIconPath": "pages/images/film_active.png"
     },
     {
-      "pagePath": "pages/profile/profile",
-      "text": "我的",
-      "iconPath": "images/profile.png",
-      "selectedIconPath": "images/profile_active.png"
+      "pagePath": "pages/synway/synway",
+      "text": "我在三汇",
+      "iconPath": "pages/images/profile.png",
+      "selectedIconPath": "pages/images/profile_active.png"
     }]
   },
   "sitemapLocation": "sitemap.json"

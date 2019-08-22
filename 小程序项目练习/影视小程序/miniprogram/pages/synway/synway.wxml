@@ -1,0 +1,11 @@
+<!-- 我在synway的故事 -->
+<view class="header">
+  <view class="title">
+    <image src="../images/synLogo.png"></image>
+  </view>
+  <swiper class="slide" autoplay="true" indicator-dots="true" indicator-color="white" circular="true" interval="2000">
+    <block wx:for="{{slides}}" wx:key="id">
+      <image mode="widthFix" src="{{item.image}}"></image>
+    </block>
+  </swiper>
+</view>
