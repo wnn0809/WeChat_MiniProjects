@@ -9,7 +9,7 @@
     "backgroundColor": "#F6F6F6",
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#e83828",
-    "navigationBarTitleText": "我在电影院等你",
+    "navigationBarTitleText": "私人订制",
     "navigationBarTextStyle": "white"
   },
   "tabBar": {
@@ -23,7 +23,7 @@
     },
     {
       "pagePath": "pages/synway/synway",
-      "text": "我在三汇",
+      "text": "我与三汇",
       "iconPath": "pages/images/profile.png",
       "selectedIconPath": "pages/images/profile_active.png"
     }]

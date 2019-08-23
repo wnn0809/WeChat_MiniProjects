@@ -1,24 +1,28 @@
 <!-- 我在synway的故事 -->
 <view class="header">
   <view class="title">
-    <image src="../images/synLogo.png"></image>
+    <image src="http://file.xiaomutong.com.cn/2019823nn-synLogo.png" lazy-load="true"></image>
   </view>
   <swiper class="slide" autoplay="true" indicator-dots="true" indicator-color="white" circular="true" interval="3000" indicator-active-color="#e83828">
-    <block wx:for="{{slides}}" wx:key="id">
+    <block wx:for="{{slides}}" wx:key="{{item.id}}">
       <swiper-item>
-        <image src="{{item.image}}"></image>
+        <image src="{{item.image}}" lazy-load="true"></image>
       </swiper-item>
     </block> 
   </swiper>
 </view>
 <view class="content">
-  <view class="content-title">关于三汇</view>
+  <view class="content-title">About Synway</view>
   <view class="syn-summary">
     杭州三汇数字信息技术有限公司创始于1997年，是国内最早从事数字通信设备生产的厂家之一，也是我国公安信息化领域的核心系统集成商。坐落于杭州高新区（滨江）软件园，拥有自己独立产权的研发大楼，办公面积达1.4万平方米，是浙江省软件企业、高新技术企业，也是工信部和国家保密局认可的系统集成企业。
   </view>
   <view class="syn-summary">
        公司在大数据应用、云计算、无线通信、信息化管理、物联网应用、智慧决策、行业应用等领域研发出了完善的产品体系，承建的公安信息化系统已遍及全国31个省、市、自治区400余家公安单位。
     </view>
-  <view class="content-title">我在三汇</view>
+  <view class="content-title">Synway And Me</view>
+  <view class="isyn" wx:for="{{storylist}}" wx:key="{{item.id}}">
+    <image class="event-pic" src="{{item.image}}" lazy-load="true"></image>
+    <text class="event-desc">| {{item.imgdesc}}</text>
+  </view>
 </view>
 
