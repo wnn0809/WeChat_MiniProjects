@@ -15,12 +15,7 @@ Page({
    */
   onLoad: function (options) {
     // console.log(options)
-    db.collection('comment').get().then(res => {
-      console.log(res.data)
-      this.setData({
-        reviewdata: res.data
-      })
-    })
+    
   },
 
   /**
@@ -34,7 +29,13 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    
+    db.collection('comment')
+      .get().then(res => {
+      console.log(res.data)
+      this.setData({
+        reviewdata: res.data
+      })
+    })
   },
 
   /**
