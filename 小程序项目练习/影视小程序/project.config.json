@@ -45,7 +45,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": -1,
+			"current": 4,
 			"list": [
 				{
 					"id": -1,
@@ -71,6 +71,13 @@
 					"id": -1,
 					"name": "pages/comment/comment",
 					"pathName": "pages/commentnext/commentnext",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/filmreview/filmreview",
+					"pathName": "pages/filmreview/filmreview",
 					"query": "",
 					"scene": null
 				}

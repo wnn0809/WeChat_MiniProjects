@@ -1,0 +1,15 @@
+<view class="review" wx:for="{{reviewdata}}" wx:key="item._id">
+  <!-- <view class="user">匿名用户</view> -->
+  <view class="review-pannel">
+    <view class="review-content">{{item.content}}</view>
+    <view class="filmname-score">
+      <text class="review-score">评分:{{item.score}}分</text>
+      <text class="filmname">## {{item.moviename}}</text>
+    </view>
+    <view class="review-image" >
+      <block wx:for="{{item.fileIds}}" wx:key="index">
+        <image src="{{item}}"></image>
+      </block>
+    </view>
+  </view>
+</view>

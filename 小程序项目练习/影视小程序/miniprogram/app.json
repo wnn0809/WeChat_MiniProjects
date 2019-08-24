@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/movie/movie",
+    "pages/filmreview/filmreview",
     "pages/synway/synway",
     "pages/comment/comment",
     "pages/commentnext/commentnext"
@@ -20,6 +21,12 @@
       "text": "电影",
       "iconPath": "pages/images/film.png",
       "selectedIconPath": "pages/images/film_active.png"
+    },
+    {
+      "pagePath": "pages/filmreview/filmreview",
+      "text": "影评",
+      "iconPath": "pages/images/filmreview.png",
+      "selectedIconPath": "pages/images/filmreview_active.png"
     },
     {
       "pagePath": "pages/synway/synway",

@@ -1,0 +1,25 @@
+/*  */
+.review{
+  height: 400rpx;
+  padding-bottom: 30rpx;
+  line-height: 1.8;
+}
+/* .user{
+  padding-bottom: 20rpx;
+} */
+.review-pannel{
+  background: #eeeeee;
+}
+.filmname-score{
+  display: flex;
+  justify-content: space-between;
+}
+.review-image{
+  display: flex;
+  justify-content: space-between;
+}
+.review-image image{
+  width: 240rpx;
+  height: 240rpx;
+  padding-top:20rpx; 
+}

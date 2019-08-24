@@ -2,8 +2,8 @@
 <view class="main">
   <view class="comment-result">评价成功</view>
   <view class="btn">
-    <navigator url="../comment/comment?movieid={{movieid}}">
-      <button class="comment-next" size="mini">继续评价</button>
+    <navigator url="../filmreview/filmreview?movieid={{movieid}}" open-type="switchTab">
+      <button class="comment-next" size="mini">查看影评</button>
     </navigator>
     <navigator url="../movie/movie" open-type="switchTab">
       <button class="gotoNavbar" size="mini">返回首页</button>

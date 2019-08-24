@@ -14,6 +14,7 @@ Page({
     images: [],//上传的图片
     fileIds: [],
     movieId: 0,
+    moviename:''
   },
   onContentChange:function(event){
     this.setData({
@@ -42,7 +43,7 @@ Page({
     })
   },
   submit: function () {
-    console.log(this.data.content)
+    // console.log(this.data.content)
     if (this.data.content===''){
       Notify('请输入评价内容');
     }else{
@@ -76,13 +77,15 @@ Page({
       // 3.将fileID存到对应的云数据库
       // 等promiseArr数组中每一个promise任务完成后再去执行then里的代码
       Promise.all(promiseArr).then(res => {
+        // console.log(detail)
         // 插入数据
         const comment = db.collection('comment').add({
           data: {
             content: this.data.content,
             score: this.data.score,
             movieid: this.data.movieId,
-            fileIds: this.data.fileIds
+            fileIds: this.data.fileIds,
+            moviename: this.data.detail.title
           }
         }).then(res => {
           wx.hideLoading();
