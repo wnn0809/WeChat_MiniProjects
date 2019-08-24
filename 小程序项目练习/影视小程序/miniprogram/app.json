@@ -30,7 +30,7 @@
     },
     {
       "pagePath": "pages/synway/synway",
-      "text": "我与三汇",
+      "text": "个人中心",
       "iconPath": "pages/images/profile.png",
       "selectedIconPath": "pages/images/profile_active.png"
     }]

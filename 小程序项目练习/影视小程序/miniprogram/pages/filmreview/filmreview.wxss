@@ -1,13 +1,14 @@
 /*  */
 .review{
   height: 400rpx;
-  padding-bottom: 30rpx;
-  line-height: 1.8;
+  padding-bottom: 20rpx;
+  line-height: 1.5;
 }
 /* .user{
   padding-bottom: 20rpx;
 } */
 .review-pannel{
+  height: 400rpx;
   background: #eeeeee;
 }
 .filmname-score{
